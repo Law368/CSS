@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  background-color: skyblue;
+}
+
+li:first-child,
+li:last-child {
+  list-style-type: none;
+}
+
+li:last-child {
+  margin-left: -25px;
+}
+
+.div {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+img {
+  width: 300px;
+  padding: 10px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-top: 41px;
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.about {
+  padding-top: 28px;
+}
+
+.about__authors {
+  margin: 0 40px;
+  font-size: 37px;
+  font-family: 'Domkrat', sans-serif;
+}
+
+.about__content {
+  display: grid;
+  grid-template: 50px repeat(2, 1fr auto) / 1fr;
+}
+
+.about__author {
+  margin: 0 auto;
+}
+
+.about__author-description {
+  padding: 0 10px;
+  text-align: left;
+}
+
+.about__Elizabeth,
+.about__Eric {
+  margin: 0 auto;
+}
+
+.summary__list {
+  display: grid;
+  grid-template: repeat(16, 1fr) / 10% 1fr 10%;
+  padding: 10px;
+}
+
+.content__intro {
+  padding-left: 10px;
+}
+
+.content__list {
+  display: grid;
+  grid-template: repeat(10, 1fr) / 1fr 15%;
+  padding: 10px;
+}
+
+.content__text {
+  padding: 10px;
+}
+
+.content__heading,
+.summary__heading {
+  font-family: 'Pudelina', sans-serif;
+  text-align: center;
+}
+
+.list-content {
+  margin-right: auto;
+}
+
+.pageNumber {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  .heading {
+    padding-left: 100px;
+  }
+
+  .about__authors {
+    margin: 0 102px;
+    font-size: 32px;
+  }
+
+  .about__content {
+    grid-template: [title-start] 44px [title-end] 1fr [photo-end text-start] 1fr [text-end]/[author1-start] 1fr [author1-end author2-start] 1fr [author2-end];
+    width: 100%;
+  }
+
+  .about__Eric {
+    grid-row: title-start/photo-end;
+    grid-column: author2-start/author2-end;
+    width: 400px;
+    margin-top: 8px;
+    margin-left: 20px;
+  }
+
+  .about__Elizabeth {
+    grid-row: title-end/photo-end;
+    grid-column: author1-start/author2-end;
+    margin: 0;
+  }
+
+  .about__Elizabeth,
+  .about__Eric {
+    margin-bottom: 10px;
+  }
+
+  .summary {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .content {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .heading {
+    padding-top: 56px;
+    padding-left: 100px;
+  }
+
+  .about__authors {
+    font-size: 37px;
+  }
+
+  .about__Elizabeth {
+    width: 476px;
+    margin-top: -10px;
+    margin-left: 85px;
+  }
+
+  .about__Eric {
+    width: 548px;
+    margin-top: -2px;
+    margin-left: 16px;
+  }
+
+  .about__Elizabeth,
+  .about__Eric {
+    margin-bottom: 4px;
+  }
+
+  .about__author-description {
+    font-size: 17px;
+  }
+
+  .about__author-description--Elizabeth {
+    padding-right: 70px;
+    padding-left: 110px;
+  }
+
+  .about__author-description--Eric {
+    padding-right: 108px;
+    padding-left: 19px;
+  }
+
+  .content__heading,
+  .summary__heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 327px;
+    font-size: 62px;
+    text-align: left;
+  }
+
+  .summary {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .summary__list {
+    grid-template: 34px 32px 53px 32px 33px 31px 33px 32px 32px 32px 32px 32px 54px 53px 25px 8px/44% 4.5% 40% 10%;
+    margin-bottom: 45px;
+    padding: 0;
+    font-size: 17px;
+  }
+
+  .summary__order {
+    grid-column: 2/3;
+  }
+
+  .list__content {
+    grid-column: 3/4;
+  }
+
+  .list-content--last {
+    grid-column: 2/4;
+  }
+
+  .bookmark {
+    grid-column: 4/5;
+  }
+
+  .content__intro {
+    margin-top: 2px;
+    margin-bottom: 12px;
+    margin-left: 375px;
+    padding: 0;
+    font-size: 35px;
+  }
+
+  .content__text {
+    margin-top: 0;
+    margin-right: 105px;
+    margin-left: 375px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .content__list {
+    grid-template: repeat(10, 10px) / 44% 46% 1fr;
+    font-size: 18px;
+  }
+
+  .content__list-item {
+    grid-column: 2/3;
+  }
+
+  .content__bookmark {
+    grid-column: 3/4;
+  }
+}

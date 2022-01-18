@@ -1,0 +1,23 @@
+@font-face {
+  font-weight: 500;
+  font-family: 'Pudelina';
+  font-style: normal;
+  src: url('../fonts/Pudelina.eot');
+  src: url('../fonts/Pudelina.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Pudelina.woff2') format('woff2'),
+    url('../fonts/Pudelina.woff') format('woff'),
+    url('../fonts/Pudelina.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Domkrat';
+  font-style: normal;
+  src: url('../fonts/Domkrat.eot');
+  src: url('../fonts/Domkrat.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Domkrat.woff2') format('woff2'),
+    url('../fonts/Domkrat.woff') format('woff'),
+    url('../fonts/Domkrat.ttf') format('truetype');
+  font-display: swap;
+}

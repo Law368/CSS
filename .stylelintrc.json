@@ -1,9 +1,12 @@
 {
     "extends": ["stylelint-config-standard",
       "stylelint-config-rational-order",
-      "stylelint-prettier/recommended"],
-      "plugins": ["stylelint-order", "stylelint-scss"],
+      "stylelint-prettier/recommended",
+      "stylelint-config-standard-scss"],
+      "plugins": ["stylelint-order"],
   "rules": {
-    "selector-class-pattern": null
+    "selector-class-pattern": null,
+    "font-family-name-quotes": null,
+    "value-no-vendor-prefix": null
   }
   }

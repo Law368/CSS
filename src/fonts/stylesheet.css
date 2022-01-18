@@ -1,0 +1,10 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'Domkrat';
+  font-style: normal;
+  src: url('Domkrat.eot');
+  src: url('Domkrat.eot?#iefix') format('embedded-opentype'),
+    url('Domkrat.woff2') format('woff2'), url('Domkrat.woff') format('woff'),
+    url('Domkrat.ttf') format('truetype');
+  font-display: swap;
+}
