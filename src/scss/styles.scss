@@ -16,10 +16,6 @@ li:last-child {
   margin-left: -25px;
 }
 
-.div {
-  display: flex;
-}
-
 img {
   width: 300px;
   padding: 10px;
@@ -169,9 +165,28 @@ img {
   text-align: right;
 }
 
+@media screen and (max-width: 767px) {
+  .wrapper {
+    transition: ease all 1s;
+  }
+
+  .about__Elizabeth,
+  .about__Eric {
+    transition: all ease 1s;
+  }
+
+  .about__author-description {
+    transition: all ease 0.5s;
+  }
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 20px;
+  }
+
+  .wrapper {
+    transition: ease all 1s;
   }
 
   .heading {
@@ -181,6 +196,15 @@ img {
   .about__authors-heading {
     margin: 0 102px;
     font-size: 32px;
+  }
+
+  .about__Elizabeth,
+  .about__Eric {
+    transition: all ease 1s;
+  }
+
+  .about__author-description {
+    transition: all ease 0.5s;
   }
 
   .about__content {
@@ -277,7 +301,31 @@ img {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  .wrapper {
+    transition: ease all 1s;
+  }
+
+  .about__Elizabeth,
+  .about__Eric {
+    transition: all ease 1s;
+  }
+
+  .about__author-description {
+    transition: all ease 0.5s;
+  }
+}
+
 @media screen and (min-width: 1280px) {
+  .about__Elizabeth,
+  .about__Eric {
+    transition: all ease 1s;
+  }
+
+  .about__author-description {
+    transition: all ease 0.5s;
+  }
+
   .heading {
     padding-top: 56px;
     padding-left: 100px;
@@ -285,6 +333,7 @@ img {
 
   .wrapper {
     padding: 0;
+    transition: ease all 1s;
   }
 
   .about__content {
