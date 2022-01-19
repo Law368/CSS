@@ -1,12 +1,13 @@
 {
+  "stylelint.enable": true,
   "scss.validate": false,
   "css.validate": false,
   "less.validate": false,
   "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.fixAll.stylelint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   },
   "eslint.validate": ["javascript"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "stylelint.validate": ["css", "scss"]
 }
-  

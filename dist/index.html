@@ -1,78 +1,214 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/stylesheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/stylesheet.css" />
     <script src="./js/index.js"></script>
     <title>CSS TASK</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <h4 class="heading">авторы</h4>
-        <section class="about">
-            <div class="about__content">
-                <h1 class="about__authors">Об авторах</h1>
-                    <img class="about__Elizabeth" src="../src/img/Elisabeth.gif" alt="Элизабет">
-                    <p class="about__author-description about__author-description--Elizabeth"><b>Элизабет</b> - автор и разработчик программного обеспечения. 
-                        Она с самого детства имеет дело с Интернетом. 
-                        Элизабет - соучредитель The Ada Project (TAP), сайта для женщин, который посвящен работе с компьютером и ныне принят ACM (Ассоциацией по вычислительной технике). 
-                        Кроме того, Элизабет возглавляет работы по исследованию и и развитию цифровых носителей.
-                    </p>
-                    <img class="about__Eric"  src="../src/img/Eric.gif" alt="Эрик">
-                    <p class="about__author-description about__author-description--Eric"><b>Эрик</b> - исследователь в области компьютеров, страстно увлекающийся работой с информацией медиатипа и архитектурой систем программного обеспечения.
-                            В течении последних четырех лет он занимался реализацией своей мечты, управляя разработкой широкополосного Интернета и беспроводного доступа в Disney.
-                    </p>
+      <h4 class="heading">авторы</h4>
+      <section class="about">
+        <div class="about__content">
+          <h1 class="about__authors-heading">Об авторах</h1>
+          <div class="about__authors">
+            <div class="about__author">
+              <img
+                class="about__Elizabeth"
+                src="./img/Elisabeth.gif"
+                alt="Элизабет"
+              />
+              <p
+                class="about__author-description about__author-description--Elizabeth"
+              >
+                <b>Элизабет</b> - автор и разработчик программного обеспечения.
+                Она с самого детства имеет дело с Интернетом. Элизабет -
+                соучредитель The Ada Project (TAP), сайта для женщин, который
+                посвящен работе с компьютером и ныне принят ACM (Ассоциацией по
+                вычислительной технике). Кроме того, Элизабет возглавляет работы
+                по исследованию и и развитию цифровых носителей.
+              </p>
             </div>
-        </section>
-        <section class="summary">
-            <h2 class="summary__heading">Содержание (сводка)</h2>
-            <div class="summary__list">
-                <span class="summary__order"></span><span class="list-content">Введение</span><span class="bookmark">23</span>
-                <span class="summary__order">1</span><span class="list-content">Язык Сети. Знакомство с HTML</span><span class="bookmark">35</span>
-                <span class="summary__order">2</span><span class="list-content">Знакомство с гипертекстом. <br>
-                    Идем дальше — используем гипертекст </span><span class="bookmark">75</span>
-                <span class="summary__order">3</span><span class="list-content">Конструирование веб-страниц. Строительные блоки </span><span class="bookmark">107</span>
-                <span class="summary__order">4</span><span class="list-content">Путешествие в Webville. Соединение</span><span class="bookmark">151</span>
-                <span class="summary__order">5</span><span class="list-content">Знакомство с медиа. Добавление изображений на страницы</span><span class="bookmark">189</span>
-                <span class="summary__order">6</span><span class="list-content">Серьезный HTML: Соответствие cтандартам</span><span class="bookmark">245</span>
-                <span class="summary__order">7</span><span class="list-content">Добавление X к HTML: Переходим к XHTML</span><span class="bookmark">285</span>
-                <span class="summary__order">8</span><span class="list-content">Начнем работать над дизайном. Приступаем к работе с CSS</span><span class="bookmark">303</span>
-                <span class="summary__order">9</span><span class="list-content">Увеличиваем словарный запас. Меняем шрифты и цвета</span><span class="bookmark">357</span>
-                <span class="summary__order">10</span><span class="list-content">Познакомимся с элементами поближе. Блочная модель</span><span class="bookmark">399</span>
-                <span class="summary__order">11</span><span class="list-content">Современная веб-конструкция. Элементы div и span </span><span class="bookmark">441</span>
-                <span class="summary__order">12</span><span class="list-content">Расставим элементы по местам.<br>
-                Разметка и позиционирование </span><span class="bookmark">499</span>
-                <span class="summary__order">13</span><span class="list-content">Представление в табличной форме. <br>
-                Таблицы и большие списки</span><span class="bookmark">557</span>
-                <span class="summary__order">14</span><span class="list-content">Переход на интерактивный режим. XHTML-формы </span><span class="bookmark">597</span>
-                <span class="summary__order"></span><span class="list-content list-content--last">Приложение. Топ-10 тем, которые не были освещены в этой книге</span><span class="bookmark">643</span>
+            <div class="about__author">
+              <img class="about__Eric" src="./img/Eric.gif" alt="Эрик" />
+              <p
+                class="about__author-description about__author-description--Eric"
+              >
+                <b>Эрик</b> - исследователь в области компьютеров, страстно
+                увлекающийся работой с информацией медиатипа и архитектурой
+                систем программного обеспечения. В течении последних четырех лет
+                он занимался реализацией своей мечты, управляя разработкой
+                широкополосного Интернета и беспроводного доступа в Disney.
+              </p>
             </div>
-        </section>
-        <section class="content">
-            <h2 class="content__heading">Содержание (настоящее)</h2>
-            <h4 class="content__intro">Введение</h4>
-            <p class="content__text">
-                <b>Поведение вашего мозга при изучении HTML и CSS.</b> Когда вы пытаетесь что-либо выучить, ваш мозг неустанно следит за тем, чтобы процесс изучения не остановился. Он думает: “Лучше оставить место для более важной информации, чтобы, например, знать, встречи с какими дикими животными следует избегать. Или знать, что катание на сноуборде без специального снаряжения - не самая удачная идея”. Как же убедить свой мозг в том, что для вас так же важно знать HTML и CSS?
-
-            </p>
-            <div class="content__list">
-                <span class="content__list-item">Для кого написана эта книга?</span><span class="content__bookmark">24</span>
-                <span class="content__list-item">Кому не стоит читать эту книгу</span><span class="content__bookmark">24</span>
-                <span class="content__list-item">Мы знаем, что вы думаете</span><span class="content__bookmark">25</span>
-                <span class="content__list-item">Мы также знаем, о чем думает ваш мозг</span><span class="content__bookmark">25</span>
-                <span class="content__list-item">Метапознание: учимся учится</span><span class="content__bookmark">27</span>
-                <span class="content__list-item">Вот что МЫ делали</span><span class="content__bookmark">28</span>
-                <span class="content__list-item">Вот что можете сделать ВЫ, чтобы заставить свой мозг работать</span><span class="content__bookmark">29</span>
-                <span class="content__list-item">Примите к сведенью</span><span class="content__bookmark">30</span>
-                <span class="content__list-item">Технические рецензенты</span><span class="content__bookmark">32</span>
-                <span class="content__list-item">Благодарности</span><span class="content__bookmark">33</span>
-                
-            </div>
-        </section>
-            <div class="pageNumber">7</div>            
+          </div>
+        </div>
+      </section>
+      <section class="summary">
+        <h2 class="summary__heading">Содержание (сводка)</h2>
+        <div class="summary__list">
+          <div class="summary__list-item">
+            <span class="summary__order"></span>
+            <span class="list-content list-content--empty">Введение</span>
+            <span class="bookmark">23</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">1</span
+            ><span class="list-content">Язык Сети. Знакомство с HTML</span
+            ><span class="bookmark">35</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">2</span
+            ><span class="list-content"
+              >Знакомство с гипертекстом. <br />Идем дальше — используем
+              гипертекст </span
+            ><span class="bookmark">75</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">3</span
+            ><span class="list-content"
+              >Конструирование веб-страниц. Строительные блоки </span
+            ><span class="bookmark">107</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">4</span
+            ><span class="list-content">Путешествие в Webville. Соединение</span
+            ><span class="bookmark">151</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">5</span
+            ><span class="list-content"
+              >Знакомство с медиа. Добавление изображений на страницы</span
+            ><span class="bookmark">189</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">6</span
+            ><span class="list-content"
+              >Серьезный HTML: Соответствие cтандартам</span
+            ><span class="bookmark">245</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">7</span
+            ><span class="list-content"
+              >Добавление X к HTML: Переходим к XHTML</span
+            ><span class="bookmark">285</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">8</span
+            ><span class="list-content"
+              >Начнем работать над дизайном. Приступаем к работе с CSS</span
+            ><span class="bookmark">303</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">9</span
+            ><span class="list-content"
+              >Увеличиваем словарный запас. Меняем шрифты и цвета</span
+            ><span class="bookmark">357</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">10</span
+            ><span class="list-content"
+              >Познакомимся с элементами поближе. Блочная модель</span
+            ><span class="bookmark">399</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">11</span
+            ><span class="list-content"
+              >Современная веб-конструкция. Элементы div и span </span
+            ><span class="bookmark">441</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">12</span
+            ><span class="list-content"
+              >Расставим элементы по местам.<br />Разметка и позиционирование </span
+            ><span class="bookmark">499</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">13</span
+            ><span class="list-content"
+              >Представление в табличной форме. <br />Таблицы и большие
+              списки</span
+            ><span class="bookmark">557</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order">14</span
+            ><span class="list-content"
+              >Переход на интерактивный режим. XHTML-формы </span
+            ><span class="bookmark">597</span>
+          </div>
+          <div class="summary__list-item">
+            <span class="summary__order"></span
+            ><span class="list-content list-content--last list-content--empty"
+              >Приложение. Топ-10 тем, которые не были освещены в этой
+              книге</span
+            ><span class="bookmark">643</span>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <h2 class="content__heading">Содержание (настоящее)</h2>
+        <h4 class="content__intro">Введение</h4>
+        <p class="content__text">
+          <b>Поведение вашего мозга при изучении HTML и CSS.</b> Когда вы
+          пытаетесь что-либо выучить, ваш мозг неустанно следит за тем, чтобы
+          процесс изучения не остановился. Он думает: “Лучше оставить место для
+          более важной информации, чтобы, например, знать, встречи с какими
+          дикими животными следует избегать. Или знать, что катание на сноуборде
+          без специального снаряжения - не самая удачная идея”. Как же убедить
+          свой мозг в том, что для вас так же важно знать HTML и CSS?
+        </p>
+        <div class="content__list">
+          <div class="content__list-item">
+            <span class="content__list-theme">Для кого написана эта книга?</span
+            ><span class="content__bookmark">24</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme"
+              >Кому не стоит читать эту книгу</span
+            ><span class="content__bookmark">24</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme">Мы знаем, что вы думаете</span
+            ><span class="content__bookmark">25</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme"
+              >Мы также знаем, о чем думает ваш мозг</span
+            ><span class="content__bookmark">25</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme">Метапознание: учимся учится</span
+            ><span class="content__bookmark">27</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme">Вот что МЫ делали</span
+            ><span class="content__bookmark">28</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme"
+              >Вот что можете сделать ВЫ, чтобы заставить свой мозг
+              работать</span
+            ><span class="content__bookmark">29</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme">Примите к сведенью</span
+            ><span class="content__bookmark">30</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme">Технические рецензенты</span
+            ><span class="content__bookmark">32</span>
+          </div>
+          <div class="content__list-item">
+            <span class="content__list-theme">Благодарности</span
+            ><span class="content__bookmark">33</span>
+          </div>
+        </div>
+      </section>
+      <div class="pageNumber">7</div>
     </div>
-</body>
+  </body>
 </html>
