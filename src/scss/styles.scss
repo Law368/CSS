@@ -1,3 +1,4 @@
+/* stylelint-disable property-no-vendor-prefix */
 body {
   margin: 0;
   font-weight: 400;
@@ -242,6 +243,38 @@ img {
     width: 70%;
     margin: 0 auto;
   }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .about__author {
+      width: 50%;
+    }
+
+    .summary__list {
+      width: 56%;
+      margin-left: auto;
+    }
+
+    .summary__order {
+      flex-basis: 10%;
+    }
+
+    .list-content {
+      flex-basis: 80%;
+    }
+
+    .bookmark {
+      flex-basis: 10%;
+    }
+
+    .content__list {
+      width: 56%;
+      margin-left: auto;
+    }
+
+    .content__list-item {
+      height: 48px;
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -268,7 +301,8 @@ img {
 
   .about__author {
     display: flex;
-    justify-content: flex-start;
+
+    // justify-content: flex-start;
   }
 
   .about__Elizabeth {
@@ -345,7 +379,7 @@ img {
   }
 
   .content__list-item {
-    height: 25px;
+    height: auto;
   }
 
   .content__list-theme {
